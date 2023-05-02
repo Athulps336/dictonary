@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTIONARY</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/2c4fa591eb.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="text-center mt-5">MY DICTIONARY</h1>
+
+    <audio id="sound" src=""></audio>
+    <div class="container mt-5">
+            <div class="back">
+                <h3 class="text-center">Search Here</h3>
+                <form class="search" >
+                  
+                    <input type="text" id="searchInput" class=" form-floating me-3 rounded" placeholder="Enter Your Word" required autocomplete="off"> <br>
+                    <button id="searchButton" class="btn btn-outline-success bg-white " onclick="tempData()" type="button"><i
+                        class="fa-solid fa-magnifying-glass fa-beat-fade" style="color: #164dac;"></i></button>
+                </form>
+                <div class="card  mt-3" style="width: 18rem; margin-top: 10px;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(20px);
+                border-radius: 10px;"
+                
+                >
+                <div id="dis" class="loc">
+                    <p><span style="font-size: large;text-align: center;  " id="Area">    Clear Your Doubtful Words<img class="emoji" src="./images/thinking-emoji-with-question-m-unscreen.gif" alt=""></span></p>
+
+                </div>
+                
+                <div id="dop" class="result">
+                    <div class="word">
+                        <h3 id="displayname"></h3>
+                        <button id="d" onclick="tempData1()" type="button" >
+                            <img  width="30px" src="./images/SpeakerIcon.png" alt="">
+                        </button>
+                    </div>
+                    <div class="details">
+                        <p id="pos"></p>
+                        <p id="pose"></p>
+                    </div>
+                    <div class="wordMeaning">
+                        <p id="wordMean"></p>
+                    </div>
+                    <div class="wordExample">
+                        <p id="wordExample"></p>
+                    </div>
+                </div>
+
+                
+             </div>
+
+</div>
+</div>
+    
+           
+             
+     
+            
+</body>
+
+<script src="./script.js"></script>
+</html>
